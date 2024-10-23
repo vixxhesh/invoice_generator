@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Invoice Generator</title>
+  </head>
+  <body>
+    <h1>Invoice Generator</h1>
+    <form method="POST">
+      {{ form.hidden_tag() }}
+      <p>
+        {{ form.client_name.label }}<br>
+        {{ form.client_name(size=32) }}
+      </p>
+      <p>
+        {{ form.client_address.label }}<br>
+        {{ form.client_address(size=64) }}
+      </p>
+      <p>
+        {{ form.shipping_address.label }}<br>
+        {{ form.shipping_address(size=64) }}
+      </p>
+      <p>
+        {{ form.product_name.label }}<br>
+        {{ form.product_name(size=32) }}
+      </p>
+      <p>
+        {{ form.quantity.label }}<br>
+        {{ form.quantity() }}
+      </p>
+      <p>{{ form.submit() }}</p>
+    </form>
+  </body>
+</html>
+

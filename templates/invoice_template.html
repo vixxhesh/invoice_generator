@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>UFS INVOICE SYSTEM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .company-info {
+        text-align: center;
+      }
+      .company-logo {
+        max-width: 150px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .invoice-title {
+        font-size: 20px;
+        margin: 20px 0;
+        font-weight: bold;
+      }
+      .details {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="company-info">
+        <h1>Unified Consultancy Services</h1>
+        <p class="invoice-title">Invoice</p>
+      </div>
+      <div>
+        <!-- Correctly use url_for to reference static assets -->
+        <img class="company-logo" src="{{ url_for('static', filename='logo.jpg') }}" alt="Company Logo">
+      </div>
+    </div>
+
+    <p><strong>Date:</strong> {{ current_date }}</p>
+
+    <p><strong>Invoice for the following:</strong></p>
+    <p><strong>Company Name:</strong> <i>Unified Consultancy Services</i></p>
+    <p><strong>Address:</strong> <i>New Delhi</i></p>
+
+    <div class="details">
+      <p><strong>Client Name:</strong> {{ client_name }}</p>
+      <p><strong>Client Address:</strong> {{ client_address }}</p>
+      <p><strong>Shipping Address:</strong> {{ shipping_address }}</p>
+      <p><strong>Product/Service:</strong> {{ product_name }}</p>
+      <p><strong>Quantity:</strong> {{ quantity }}</p>
+    </div>
+  </body>
+</html>
