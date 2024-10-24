@@ -1,6 +1,6 @@
 # invoice_generator
 
-# # Instructions to install and run on dev 
+## Instructions to install and run on dev 
 
 - To clone/download the project on your machine: `git clone https://github.com/vixxhesh/invoice_generator.git`
 - Open the project in vscode/other ide
