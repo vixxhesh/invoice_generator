@@ -1,0 +1,175 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.company-logo {
+    width: 100px;
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* Info sections */
+.our_info_left, .our_info_right {
+    width: 48%;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.our_info_left {
+    float: left;
+    text-align: left;
+}
+
+.our_info_right {
+    float: right;
+    text-align: right;
+}
+
+p {
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+/* Details section styling */
+.details {
+    clear: both;
+    margin-top: 40px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.details p {
+    margin: 4px 0;
+}
+
+/* Specific adjustments for certain text */
+.add1 {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.email, .mob {
+    font-style: italic;
+}
+
+/* Additional alignment adjustments */
+.inv_no, .curr_date, .gstin, .iec, .lut {
+    text-align: right;
+}
+
+/* Consignee table styling */
+.consignee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.consignee-table th, .consignee-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.consignee-table th {
+    background-color: #0a4b78;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.consignee-table td {
+    background-color: #e8f4fd;
+}
+
+.consignee-table tr:nth-child(odd) td {
+    background-color: #f4faff;
+}
+
+/* Professional Services and Sales Tables */
+.services-table, .sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.services-table th, .sales-table th, .services-table td, .sales-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.services-table th, .sales-table th {
+    background-color: #0a4b78;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sales-table td {
+    background-color: #e8f4fd;
+}
+
+/* Payment terms and total sections */
+.payment-terms, .total-in-words, .bank-details, .company-declaration {
+    margin-top: 20px;
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.payment-terms p, .total-in-words p, .bank-details p, .company-declaration p {
+    margin: 4px 0;
+}
+
+/* Signature and Jurisdiction */
+.signature-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.jurisdiction {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 12px;
+}
